@@ -20,7 +20,7 @@ const Footer = () => {
   return (
     <StyledFooterDiv>
       <StyledCopyright>
-        Copyrights ADRE9
+        
       </StyledCopyright>
     </StyledFooterDiv>
   )
