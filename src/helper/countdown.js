@@ -5,12 +5,14 @@ const prettify = (number) => {
   return number;
 }
 
-export const countdown = (eventTime) => {
+export const countdown = () => {
+  const eventTime = new Date("Feb 26 2021 16:00:00 GMT");
   var timeEnd = eventTime;
-  var timeNow = new Date().getTime();
+  var d = new Date();
+  var timeNow = d.getTime();
 
   if (timeEnd < timeNow) {
-    return "The Event has already Ended";
+    return 0;
   }
 
   var timeLeft = timeEnd - timeNow;

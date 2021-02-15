@@ -36,26 +36,30 @@ const StyledClockDiv = styled.div`
 const StyledHeadlineDiv = styled.div`
   width:100%;
   display:flex;
-  padding-top:2em;
   align-items:center;
   justify-content:center;
-  height:15vh;
+  height:20vh;
 `;
 
 const EventName = styled.h1`
-  color:#ffb510;
+  color:#fce510;
   text-shadow:0 0 10px #fb0000,
                0 0 20px #fb0000,
                0 0 40px #fb0000,
                0 0 80px #fb0000,
                0 0 120px #fb0000,
                0 0 150px #fb0000;
-  font-size:70px;
+  
 
   @media ${device.mobileS}{
     padding-top:2rem;
     text-align:center;
     font-size:50px;
+  }
+  @media ${device.laptop}{
+    padding-top:5rem;
+    text-align:center;
+    font-size:70px;
   }
 `;
 
@@ -74,12 +78,10 @@ const GridItem = styled.div`
 `;
 
 const Content = () => {
-
-  const eventTime = new Date("feb 26, 2021 16:00:00 GMT").getTime();
   const [timeObj, setTimeObj] = useState({});
 
   setInterval(function () {
-    setTimeObj(countdown(eventTime))
+    setTimeObj(countdown())
   }, 1000);
 
   return (
