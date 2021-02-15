@@ -32,6 +32,7 @@ color:${colors.text};
                0 0 80px #fb0000,
                0 0 120px #fb0000,
                0 0 150px #fb0000;
+    font-family: 'Inconsolata';
 `;
 
 const TubeWrapperLeft = styled.div`
@@ -53,9 +54,10 @@ width:100%;
 const DigitDiv = styled.div`
   position:absolute;
   z-index:2;
-  top:20% ;
+  top:23% ;
   left:50% ;
-  transform:translate(-50%,-35%)
+  transform:translate(-50%,-35%);
+  
 `;
 
 
@@ -125,7 +127,9 @@ color:${colors.text};
                0 0 80px #fb0000,
                0 0 120px #fb0000,
                0 0 150px #fb0000;
-font-size:150px;
+font-size:130px;
+font-family: 'Roboto', sans-serif;
+/*font-family: 'Inconsolata';*/
 `;
 
 const DigitSpan = styled.span`

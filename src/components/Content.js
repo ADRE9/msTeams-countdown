@@ -49,7 +49,7 @@ const EventName = styled.h1`
                0 0 80px #fb0000,
                0 0 120px #fb0000,
                0 0 150px #fb0000;
-  
+   font-family: 'Inconsolata';
 
   @media ${device.mobileS}{
     padding-top:2rem;
